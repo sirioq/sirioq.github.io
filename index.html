@@ -1,73 +1,33 @@
-<!doctype html>
+---
+layout: default
+title: Home
+---
 
-<html>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-  <head>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    <title>Hip Hop Classics</title>
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
 
-    <meta name="author" content="Mozilla Learning Networks">
-    <meta name="title" content="Project Playlist">
-
-    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="Stylesheet" href="style.css" type="text/css">
-
-  </head>
-
-  <body>
-
-    <header>
-
-      <h1>Take it&nbsp;&nbsp;&nbsp;<span class="kawaii">Old(&gt;.&lt;)Skool</span>&nbsp;&nbsp;&nbsp;Back</h1>
-
-      <h2>Golden Age Hip Hop and Samples.</h2>
-
-    </header>
-
-    <main>
-
-      <div id="playlist">
-
-        <div class="track">
-          
-          <iframe width="80%" height="115" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201313948&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-        
-        </div>	
-        
-
-        
-        <div class="track">
-          
-          <iframe width="80%" height="115" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/119797581&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-        
-        </div>
-        
-        
-        <div class="track">
-          
-          <iframe width="80%" height="115" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75258250&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-        
-        </div>
-        
-        
-        <div class="track">
-          
-          <iframe width="80%" height="115" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233494511&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-        
-        </div>
-        
-
-      </div>
-
-    </main>
-
-    <footer>
-
-      <div id="license">BY <a href="https://teach.mozilla.org" target="blank_">Mozilla Learning Networks</a></div>
-
-    </footer>
-
-  </body>
-
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
