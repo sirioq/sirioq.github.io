@@ -26,4 +26,4 @@ Afterwriting: Online editor
 Sagemathcloud
 
 # Python
-Sagemathcloud
+SageMathCloud
