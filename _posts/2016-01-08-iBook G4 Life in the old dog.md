@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using an ibook G4
+site title: Old Tech
 ---
 
 #What Can You Do in the Modern World With a 10 Year Old Laptop?
