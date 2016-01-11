@@ -54,8 +54,7 @@ Another great thing I found was SageMathCloud. This site gives me access to a fu
   * Still functional 
   * May even improve as more people embrace clean web design and cloud based computing.
 
-$$ y=x$$ 
 
- And finally it goes without saying that this post was done on said computer.
+ And finally it goes without saying that this post was done on the same iBook.
  
  
