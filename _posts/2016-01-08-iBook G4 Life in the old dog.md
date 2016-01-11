@@ -38,7 +38,7 @@ The internet has changed hugely in ten years and the demands that websites make 
 ### Problem 1
 Finding a browser.
 Apple have stopped updating Safari for Tiger and using an out of date browser unnecessarily exposes you to security risks so I had a look around.
-So it turns out that I'm not the only one intersted in using old computers and there are two browsers TenFourFox and WebKit which are stil maintained.
+So it turns out that I'm not the only one intersted in using old computers and it turns out that TenFourFox  is an up to date browser based on Firefox but specifically for Tiger and PPC macs.
 
 Do they work?
 
@@ -53,7 +53,9 @@ Another great thing I found was SageMathCloud. This site gives me access to a fu
   * Still fun 
   * Still functional 
   * May even improve as more people embrace clean web design and cloud based computing.
- 
+
+$$ y=x$$ 
+
  And finally it goes without saying that this post was done on said computer.
  
  
