@@ -3,7 +3,7 @@ layout: post
 title: The Perfect Maths Problem
 ---
 
-#The Search for the Perfect Mathematical Problem.
+# The Search for the Perfect Mathematical Problem.
 
 -----
 
