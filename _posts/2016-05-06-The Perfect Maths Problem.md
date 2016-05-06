@@ -1,4 +1,13 @@
-# The Search for the Perfect Mathematical Problem.
+---
+layout: post
+title: The Perfect Maths Problem
+---
+
+#The Search for the Perfect Mathematical Problem.
+
+-----
+
+
 
 Recently I've been looking through a number of maths problems from different sources, textbooks, Olympiad papers and 'recreational' mathematics books, in the hunt for what makes the perfect challenge.
 
