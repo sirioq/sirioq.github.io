@@ -7,6 +7,6 @@ It soon became apparent that for my purposes the problem needed to be easily acc
 example:
 
 find 
-$
+$$
 i^i 
-$?
+$$
