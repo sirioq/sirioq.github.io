@@ -3,7 +3,7 @@ layout: post
 title: Using an iBook G4
 ---
 
-#What Can You Do in the Modern World With a 10 Year Old Laptop?
+# What Can You Do in the Modern World With a 10 Year Old Laptop?
 
 -----
 
