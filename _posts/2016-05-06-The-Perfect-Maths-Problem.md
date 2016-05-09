@@ -13,11 +13,8 @@ Recently I've been looking through a number of maths problems from different sou
 
 It soon became apparent that for my purposes the problem needed to be easily accessible. There were a number of really engaging problems but the level of assumed mathematical knowledge was too great to have widespread appeal.
 
-example:
+For example;
 
-find 
-$$
-i^i 
-$$
-
+Finding i<sup>i</sup> is very elegant in the simplicity of the initial statement and the surprising fact that it gives a real answer. 
+However solving it requires the understanding of natural logarithms and imaginary numbers which greatly limits its accessibility.
 
