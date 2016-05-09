@@ -15,6 +15,7 @@ It soon became apparent that for my purposes the problem needed to be easily acc
 
 For example;
 
-Finding i<sup>i</sup> is very elegant in the simplicity of the initial statement and the surprising fact that it gives a real answer. 
+Finding **i<sup>i</sup>** 
+is very elegant in the simplicity of the initial statement and the surprising fact that it gives a real answer. 
 However solving it requires the understanding of natural logarithms and imaginary numbers which greatly limits its accessibility.
 
