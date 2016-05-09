@@ -17,13 +17,13 @@ Some problems have such a complicated setup that many readers will be turned off
 one of your horses, and then you'll have twice as many animals here as I've got." "If that's your way of doing 
 business," said Durrant to Hodge, "I'll give you fourteen of my sheep for a horse, and then you'll have three 
 times as many animals as I." "Well, I'll go better than that," said Jakes to Durrant; "I'll give you four cows for a 
-horse, and then you'll have six times as many animals as I've got here." 
+horse, and then you'll have six times as many animals as I've got here."*
 
 
-No doubt this was a very primitive way of bartering animals, but it is an interesting little puzzle to discover just 
-how many animals Jakes, Hodge, and Durrant must have taken to the cattle market. *
+*No doubt this was a very primitive way of bartering animals, but it is an interesting little puzzle to discover just 
+how many animals Jakes, Hodge, and Durrant must have taken to the cattle market.*
 
-Others require some trick or  word play which, to my mind, removes any satisfaction in solving them.* 
+Others require some trick or  word play which, to my mind, removes any satisfaction in solving them.
 
 It soon became apparent that for my purposes the problem needed to be easily accessible, easily defined and the right level of complexity. There were a number of really engaging problems but the level of assumed mathematical knowledge was too great to have widespread appeal.
 
