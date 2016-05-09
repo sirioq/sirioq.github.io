@@ -19,7 +19,9 @@ business," said Durrant to Hodge, "I'll give you fourteen of my sheep for a hors
 times as many animals as I." "Well, I'll go better than that," said Jakes to Durrant; "I'll give you four cows for a 
 horse, and then you'll have six times as many animals as I've got here." 
 
-No doubt this was a very primitive way of bartering animals, but it is an interest
+
+No doubt this was a very primitive way of bartering animals, but it is an interesting little puzzle to discover just 
+how many animals Jakes, Hodge, and Durrant must have taken to the cattle market. *
 
 Others require some trick or  word play which, to my mind, removes any satisfaction in solving them.* 
 
