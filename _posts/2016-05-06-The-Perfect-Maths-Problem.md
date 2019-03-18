@@ -43,8 +43,8 @@ One of the great popularisers of recreational mathematics, Alfred Dudeny, talks 
 What I like about this example is that it is trivial to solve with a simple bit of code and pretty much any computer. My old iBook G4 can do it in a matter of minutes with a brute force approach. (Unfortunately there are no divisors.)
 
 
-So having looked at a few that don't fit the bill I suppose I need to come up with my favourite, clearly this will depend on personal preference but here goes.#
+So having looked at a few that don't fit the bill I suppose I need to come up with my favourite, clearly this will depend on personal preference but here goes.
 
 *I have a simple balance scale and somebody brings me 12 coins, 11 identical gold ones and one fake one which looks the same but has  a different mass.
 
-How can I find the fake ine using the scale only 3 times?*
+How can I find the fake one using the scale only 3 times?*
