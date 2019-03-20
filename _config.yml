@@ -1,3 +1,8 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
 
 # Setup
@@ -6,6 +11,7 @@ tagline:             Making the Most of Oudated Technology
 url:                 
 paginate:            1
 baseurl:             http://sirioq.github.io/
+paginate:            5
 
 # Assets
 #
@@ -28,4 +34,3 @@ github:
   
 
 
-theme: jekyll-theme-slate
