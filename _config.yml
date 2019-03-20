@@ -27,3 +27,5 @@ github:
   repo:              https://github.com/sirioq
   
   theme: minimal
+
+theme: jekyll-theme-slate
