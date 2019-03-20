@@ -48,7 +48,8 @@ body {
 }
 
 html {
-  font-family: "Average", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Assistant", sans-serif;
+
   font-size: 16px;
   line-height: 1.5;
 }
