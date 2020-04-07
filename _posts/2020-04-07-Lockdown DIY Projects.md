@@ -22,19 +22,29 @@ Equipment
 
 
 After a wet winter my outdoor table and sun lounger were looking very worn out. Looking around the flat I found a tin of wood seal, some sandpaper and a paintbrush so I was all set to go.
+
 First wait for some dry weather and then spend the afternoon prepping the wood.
+
 Sand all the surfaces to be varnished and then wipe them clean with a rag and some soapy water. The wood should be looking good now, nice and smooth but also a but naked!
+
 Leave the wood to dry and wait until the sun goes down.
+
 Once there is no direct sunlight on the furniture lay some newspaper underneath to catch any drips and then apply a thin layer of varnish with smooth strokes to all the surfaces. It might help to watch The Karate Kid before doing this.
+
 Tidy up the newspaper, go to sleep and wake up the next morning to brand new outdoor furniture!
 
 Time 
+
 Afternoon and overight drying
+
 Don't rush things, give youself about an hour to prep and an hour to varnish with plenty of time in between for drying.
 
 Difficulty
+
 Very easy a bit of elbow grease needed for the sanding but nothing too strenuous
 
 Satisfaction
+
 Furniture looks brand new once finished so you can sit back and enjoy the sunshine feeling pleased with yourself.
+
 Although I might add another couple of layers in the next few days for extra protection.
