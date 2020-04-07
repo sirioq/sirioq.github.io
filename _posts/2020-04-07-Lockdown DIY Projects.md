@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lockdoen DIY Projects
+title: Lockdown DIY Projects
 ---
 
 # DIY Tasks to Keep Busy During Lockdown
