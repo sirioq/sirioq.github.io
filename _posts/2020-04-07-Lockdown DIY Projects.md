@@ -11,7 +11,7 @@ title: Lockdoen DIY Projects
 With the world in lockdown with the Coronavirus we're spending increased hours indoors. Life has slowed down and it seems as though there are more hours in the day. Finally we have the spare hours to tackle all those tasks around the house which we have been so good at putting off.
 Here I'm going to include a list of the jobs I've done so far as we enter the third week of this new life. Each project is one that is easy to do but has lasting impact, the sort of chores that we should be doing on a regular basis but somehow we've let slip for a number of years. Another bonus is they use up the free newspapers that are cluttering up the hallway.
 
-1. Varnishing Outdoor Furniture
+## 1. Varnishing Outdoor Furniture
 
 Equipment
 
@@ -41,17 +41,17 @@ Once there is no direct sunlight on the furniture lay some newspaper underneath 
 
 Tidy up the newspaper, go to sleep and wake up the next morning to brand new outdoor furniture!
 
-Time 
+### Time 2 hours
 
 Afternoon and overight drying
 
 Don't rush things, give youself about an hour to prep and an hour to varnish with plenty of time in between for drying.
 
-Difficulty
+### Difficulty 1/5
 
 Very easy a bit of elbow grease needed for the sanding but nothing too strenuous
 
-Satisfaction
+### Satisfaction 4/5
 
 Furniture looks brand new once finished so you can sit back and enjoy the sunshine feeling pleased with yourself.
 
