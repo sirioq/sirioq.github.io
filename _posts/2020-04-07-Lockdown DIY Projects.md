@@ -1,4 +1,12 @@
+---
+layout: post
+title: Lockdoen DIY Projects
+---
+
 # DIY Tasks to Keep Busy During Lockdown
+
+-----
+
 
 With the world in lockdown with the Coronavirus we're spending increased hours indoors. Life has slowed down and it seems as though there are more hours in the day. Finally we have the spare hours to tackle all those tasks around the house which we have been so good at putting off.
 Here I'm going to include a list of the jobs I've done so far as we enter the third week of this new life. Each project is one that is easy to do but has lasting impact, the sort of chores that we should be doing on a regular basis but somehow we've let slip for a number of years. Another bonus is they use up the free newspapers that are cluttering up the hallway.
