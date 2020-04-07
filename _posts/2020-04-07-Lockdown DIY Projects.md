@@ -13,7 +13,7 @@ Here I'm going to include a list of the jobs I've done so far as we enter the th
 
 ## 1. Varnishing Outdoor Furniture
 
-Equipment
+**Equipment**
 
 *Outdoor Wood Varnish (does what it says on the tin)*
 
