@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirio's Educational Tools</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink-50:  #fdf2f6;
+      --pink-100: #fbe6f0;
+      --pink-200: #f5c6dc;
+      --pink-400: #e87ab0;
+      --pink-500: #d9538e;
+      --pink-600: #c23a77;
+      --grey-50:  #f8f8f9;
+      --grey-100: #f0f0f3;
+      --grey-200: #e2e2e8;
+      --grey-400: #9e9eac;
+      --grey-600: #5c5c6e;
+      --grey-800: #2a2a38;
+      --grey-900: #18181f;
+      --radius: 14px;
+      --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--grey-50);
+      color: var(--grey-800);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: white;
+      border-bottom: 1px solid var(--grey-200);
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 68px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      color: var(--grey-900);
+      letter-spacing: -0.01em;
+    }
+
+    .footer-logo {
+      height: 96px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.6;
+      transition: opacity var(--transition);
+    }
+
+    .footer-logo:hover { opacity: 1; }
+
+    /* ── HERO ── */
+    .hero {
+      background: white;
+      padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4.5rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, var(--pink-100) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--pink-500);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: var(--grey-900);
+      max-width: 680px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--pink-500);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--grey-600);
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--grey-200);
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      color: var(--grey-900);
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-desc {
+      font-size: 0.9rem;
+      color: var(--grey-400);
+      font-weight: 400;
+      margin-bottom: 1.75rem;
+    }
+
+    /* ── CARDS ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+      position: relative;
+    }
+
+    .card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pink-400), var(--pink-600));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+      border-color: var(--pink-200);
+    }
+
+    .card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .card-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 99px;
+      margin-bottom: 0.3rem;
+    }
+
+    .tag-physics {
+      background: var(--pink-50);
+      color: var(--pink-600);
+      border: 1px solid var(--pink-200);
+    }
+
+    .tag-maths {
+      background: #f0f4ff;
+      color: #4a5fc1;
+      border: 1px solid #d4dcf9;
+    }
+
+    .tag-english {
+      background: #f0faf4;
+      color: #2e7d52;
+      border: 1px solid #c3e8d4;
+    }
+
+    .tag-other {
+      background: var(--grey-100);
+      color: var(--grey-600);
+      border: 1px solid var(--grey-200);
+    }
+
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--grey-900);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--grey-600);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .card-arrow {
+      padding-top: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--pink-500);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: gap var(--transition);
+    }
+
+    .card-with-downloads { cursor: default; }
+
+    .card-main-link {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding-top: 0.4rem;
+    }
+
+    .card-download-link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--pink-500);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .card-download-link:hover {
+      color: var(--pink-600);
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--grey-200);
+      margin: 0 clamp(1.5rem, 5vw, 4rem);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
+      font-size: 0.8rem;
+      color: var(--grey-400);
+      font-weight: 400;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-inner { animation: fadeUp 0.6s ease both; }
+
+    .card {
+      animation: fadeUp 0.5s ease both;
+    }
+    .card:nth-child(1) { animation-delay: 0.05s; }
+    .card:nth-child(2) { animation-delay: 0.10s; }
+    .card:nth-child(3) { animation-delay: 0.15s; }
+    .card:nth-child(4) { animation-delay: 0.20s; }
+    .card:nth-child(5) { animation-delay: 0.25s; }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .header-badge { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <img src="logo.png" alt="Sirio's Educational Tools" class="logo-img" />
+        <span class="logo-name">Sirio's Educational Tools</span>
+      </a>
+
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Interactive Learning Resources</p>
+      <h1>Tools for <em>curious</em> students</h1>
+      <p class="hero-sub">A collection of interactive web apps for A-Level Physics, primary Maths, English, and more — designed to make learning engaging and effective.</p>
+    </div>
+  </div>
+
+  <!-- PHYSICS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Physics</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="https://sirioq.github.io/Hooke-plotter/" target="_blank">
+        <span class="card-tag tag-physics">Physics · A-Level</span>
+        <div class="card-title">Hooke Plotter</div>
+        <p class="card-desc">An interactive graph plotter for experimental data — add points, fit trend lines, calculate gradients, and export publication-ready plots with uncertainty columns.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/CIE-A-level-Revision-Guide/" target="_blank">
+        <span class="card-tag tag-physics">Physics · A-Level</span>
+        <div class="card-title">CIE A-Level Revision Guide</div>
+        <p class="card-desc">Complete revision booklets for Cambridge International A-Level Physics (9702, 2025–2027 syllabus) — definitions, formulae, worked examples, exam practice and mark schemes.</p>
+        <span class="card-arrow">Open resource →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/energy_levels/" target="_blank">
+        <span class="card-tag tag-physics">Physics · A-Level</span>
+        <div class="card-title">Hydrogen Energy Level Diagram</div>
+        <p class="card-desc">An interactive energy level diagram for hydrogen — explore electron transitions and emission/absorption spectra.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+      <div class="card card-with-downloads">
+        <a class="card-main-link" href="https://sirioq.github.io/photoelectric/" target="_blank">
+          <span class="card-tag tag-physics">Physics · A-Level</span>
+          <div class="card-title">Photoelectric Effect Simulation</div>
+          <p class="card-desc">A photocell circuit simulation — adjust wavelength and intensity, measure stopping voltage, and explore the key equations for the photoelectric effect.</p>
+          <span class="card-arrow">Open simulation →</span>
+        </a>
+        <div class="card-downloads">
+          <a class="card-download-link" href="https://sirioq.github.io/photoelectric/Photoelectric%20Effect%20%E2%80%94%20Simulation%20Worksheet.pdf" target="_blank">↓ Worksheet</a>
+          <a class="card-download-link" href="https://sirioq.github.io/photoelectric/Photoelectric%20Effect%20%E2%80%94%20Simulation%20markscheme.pdf" target="_blank">↓ Mark Scheme</a>
+        </div>
+      </div>
+
+      <a class="card" href="https://sirioq.github.io/gas_laws/" target="_blank">
+        <span class="card-tag tag-physics">Physics · GCSE</span>
+        <div class="card-title">Gas Molecules Simulation Lab</div>
+        <p class="card-desc">An interactive kinetic theory simulation — vary temperature, volume and particle count, record readings, and plot live p–V and p–T graphs.</p>
+        <span class="card-arrow">Open simulation →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/boyles_law/" target="_blank">
+        <span class="card-tag tag-physics">Physics · GCSE</span>
+        <div class="card-title">Boyle's Law Simulation</div>
+        <p class="card-desc">A visual gas compression simulation — drag the slider to change volume, watch pressure respond in real time, and see the p–V curve plotted live.</p>
+        <span class="card-arrow">Open simulation →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/moments/" target="_blank">
+        <span class="card-tag tag-physics">Physics · GCSE</span>
+        <div class="card-title">Moments Balance</div>
+        <p class="card-desc">A hands-on moments (torque) puzzle game — place weights on a ruler to balance it, solve for a mystery mass, and progress through increasingly tricky levels. Includes a live class leaderboard for teachers.</p>
+        <span class="card-arrow">Open game →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/doppler/" target="_blank">
+        <span class="card-tag tag-physics">Physics · GCSE</span>
+        <div class="card-title">Doppler Effect Simulation</div>
+        <p class="card-desc">A slowed-down wave animation of a moving source — vary its speed and frequency, compare the frequency heard by two observers, and see the workings behind each result.</p>
+        <span class="card-arrow">Open simulation →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/scope/" target="_blank">
+        <span class="card-tag tag-physics">Physics · GCSE</span>
+        <div class="card-title">Virtual Oscilloscope</div>
+        <p class="card-desc">Practise reading an oscilloscope trace — adjust the timebase and volts/div knobs, then measure the period, frequency and amplitude of mystery signals.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- PRIMARY MATHS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Primary · Maths</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="https://sirioq.github.io/maths/" target="_blank">
+        <span class="card-tag tag-maths">Maths · KS1/KS2</span>
+        <div class="card-title">Maths Challenge</div>
+        <p class="card-desc">A levelled arithmetic practice game for young learners — work through addition and number challenges across multiple difficulty levels.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/maths/ks1/" target="_blank">
+        <span class="card-tag tag-maths">Maths · KS1</span>
+        <div class="card-title">Holiday Maths Challenge</div>
+        <p class="card-desc">Seven days of maths fun covering shapes, clocks, measurements and number problems — with a Remix mode that generates fresh numbers for a second run.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- PRIMARY ENGLISH -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Primary · English</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="https://sirioq.github.io/spelling/year3/" target="_blank">
+        <span class="card-tag tag-english">English · Year 3</span>
+        <div class="card-title">Year 3 Spelling Challenge</div>
+        <p class="card-desc">An audio-guided weekly spelling test — listen to each word spoken aloud, type your answer, and get instant feedback. Works best in Chrome or Safari.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/crossword/" target="_blank">
+        <span class="card-tag tag-english">English · Primary</span>
+        <div class="card-title">Tilli's Crossword</div>
+        <p class="card-desc">A themed crossword puzzle designed for primary pupils — with colourful emoji categories to guide clues across topics from animals to winter and school.</p>
+        <span class="card-arrow">Open tool →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- OTHER -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Other</span>
+      <span class="section-line"></span>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="https://sirioq.github.io/novasynth/" target="_blank">
+        <span class="card-tag tag-other">Music · Web App</span>
+        <div class="card-title">Nova Synth</div>
+        <p class="card-desc">A browser-based MIDI synthesiser with oscilloscope, ADSR envelope, filters, reverb, chorus, drive, and a built-in arpeggiator. Connect a MIDI keyboard to play.</p>
+        <span class="card-arrow">Open app →</span>
+      </a>
+
+      <a class="card" href="https://sirioq.github.io/blast/" target="_blank">
+        <span class="card-tag tag-other">Game</span>
+        <div class="card-title">Block Blaster</div>
+        <p class="card-desc">A satisfying block-placement puzzle game — click pieces, preview placement on hover, and aim for the highest score.</p>
+        <span class="card-arrow">Play game →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <img src="logo.png" alt="Sirio's Educational Tools" class="footer-logo" />
+  </footer>
+
+</body>
+</html>
